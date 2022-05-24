@@ -23,14 +23,9 @@ export default function Scene({ setBg }) {
   const [down, setDown] = useState(false);
   const [hovered, setHovered] = useState(false);
 
-  const [colorMap, roughnessMap] = useTexture([
-    "plywood_diff_4k.jpg",
-    // "plywood_nor_gl_4k.exr",
-    "plywood_rough_4k.jpg",
-  ]);
+  const [colorMap, roughnessMap] = useTexture(["/textures/plywood_diff_4k.jpg", "/textures/plywood_rough_4k.jpg"]);
 
   // Make the bubble float and follow the mouse
-  // This is frame-based animation, useFrame subscribes the component to the render-loop
   useFrame((state) => {
     if (sphere.current) {
       sphere.current.position.x = THREE.MathUtils.lerp(
@@ -60,7 +55,6 @@ export default function Scene({ setBg }) {
       <PerspectiveCamera makeDefault ref={camera} position={[0, 0, 4]} rotation={[0, 0, 0]} fov={75}>
         <a.ambientLight intensity={1} />
       </PerspectiveCamera>
-      {/* <axesHelper args={[2, 2, 2]} /> */}
       <OrbitControls camera={camera.current} enablePan={false} enableZoom={false} />
       <Suspense fallback={null}>
         <a.mesh

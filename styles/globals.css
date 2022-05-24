@@ -217,3 +217,13 @@
     box-sizing: border-box;
   }
 }
+
+@layer components {
+  #navbar > li {
+    @apply rounded-sm leading-tight focus-within:outline-none focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 focus-within:ring-offset-secondary;
+  }
+
+  #navbar > li > a {
+    @apply outline-none;
+  }
+}

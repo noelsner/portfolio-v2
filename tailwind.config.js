@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         header: ["Galderglynn Titling", "ui-sans-serif", "sans-serif"],
       },
+      backgroundImage: {
+        topo: "url('/images/topography.svg')",
+      },
     },
   },
   plugins: [],
