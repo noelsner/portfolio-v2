@@ -130,7 +130,7 @@
   }
   @font-face {
     font-family: "Poppins";
-    src: url("/fonts/Poppins/Poppins-RegularItalic.ttf") format("truetype");
+    src: url("/fonts/Poppins/Poppins-Italic.ttf") format("truetype");
     font-weight: 400;
     font-style: italic;
   }
