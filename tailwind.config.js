@@ -12,7 +12,10 @@ module.exports = {
       backgroundImage: {
         topo: "url('/images/topography.svg')",
       },
+      dropShadow: {
+        "3xl": "0px 1px 8px rgba(25, 25, 39, 0.2)",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
