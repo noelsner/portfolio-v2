@@ -209,12 +209,13 @@
   }
 
   a {
-    color: inherit;
-    text-decoration: none;
+    cursor: url("/images/cursor-filled.svg"), pointer;
+    @apply text-inherit hover:underline;
   }
 
   * {
     box-sizing: border-box;
+    cursor: url("/images/cursor.svg"), auto;
   }
 }
 
