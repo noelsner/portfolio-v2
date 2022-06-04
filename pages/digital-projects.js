@@ -46,7 +46,7 @@ const DigitalProjectOverview = ({ project, children }) => {
         </p>
         <p className="text-xl">{project.description}</p>
       </div>
-      {children}
+      <div className="relative w-full h-full max-w-6xl mx-auto mt-8 mb-24">{children}</div>
     </div>
   );
 };
@@ -67,42 +67,53 @@ export default function Home() {
           <h1 className="my-20 text-center text-7xl font-header">Digital Projects</h1>
           <div className="px-4 mx-auto lg:px-12">
             <DigitalProjectOverview project={projects.brewgood}>
-              <div className="relative w-full h-full max-w-6xl mx-auto mt-8 mb-24">
-                <DesktopScreenshot
-                  imgUrl="/images/projects/brewgood-desktop-1.png"
-                  alt="brewgood.coffee screenshot"
-                  className="relative inset-0 w-2/3"
-                />
-                <MobileScreenshot
-                  imgUrl={"/images/projects/brewgood-mobile-2.png"}
-                  alt={projects.brewgood.name}
-                  className="absolute top-36 right-56"
-                  small
-                />
-                <MobileScreenshot
-                  imgUrl="/images/projects/brewgood-mobile-3.png"
-                  alt={projects.brewgood.name}
-                  className="absolute right-0 top-24"
-                  small
-                />
-              </div>
+              <DesktopScreenshot
+                imgUrl="/images/projects/brewgood-desktop-1.png"
+                alt="brewgood.coffee screenshot"
+                className="relative inset-0 w-2/3"
+              />
+              <MobileScreenshot
+                imgUrl={"/images/projects/brewgood-mobile-2.png"}
+                alt={projects.brewgood.name}
+                className="absolute top-36 right-56"
+                small
+              />
+              <MobileScreenshot
+                imgUrl="/images/projects/brewgood-mobile-3.png"
+                alt={projects.brewgood.name}
+                className="absolute right-0 top-24"
+                small
+              />
             </DigitalProjectOverview>
 
             <DigitalProjectOverview project={projects.spacespromo}>
-              <div className="relative w-full h-full max-w-6xl mx-auto mt-8">
-                <DesktopScreenshot
-                  imgUrl="/images/projects/spacespromo-desktop-1.png"
-                  alt="spacespromo screenshot"
-                  className="relative inset-0 w-[55%]"
-                  priority={true}
-                />
-                <DesktopScreenshot
-                  imgUrl="/images/projects/spacespromo-desktop-2.png"
-                  alt="spacespromo screenshot"
-                  className="absolute right-0 w-[55%] top-16"
-                  priority={true}
-                />
-              </div>
+              <DesktopScreenshot
+                imgUrl="/images/projects/spacespromo-desktop-1.png"
+                alt="spacespromo screenshot"
+                className="relative inset-0 w-[55%]"
+                priority={true}
+              />
+              <DesktopScreenshot
+                imgUrl="/images/projects/spacespromo-desktop-2.png"
+                alt="spacespromo screenshot"
+                className="absolute right-0 w-[55%] top-16"
+                priority={true}
+              />
+            </DigitalProjectOverview>
+
+            <DigitalProjectOverview project={projects.eimmigrate}>
+              <DesktopScreenshot
+                imgUrl="/images/projects/spacespromo-desktop-1.png"
+                alt="spacespromo screenshot"
+                className="relative inset-0 w-[55%]"
+                priority={true}
+              />
+              <DesktopScreenshot
+                imgUrl="/images/projects/spacespromo-desktop-2.png"
+                alt="spacespromo screenshot"
+                className="absolute right-0 w-[55%] top-16"
+                priority={true}
+              />
             </DigitalProjectOverview>
           </div>
         </main>

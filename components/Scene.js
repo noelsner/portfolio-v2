@@ -81,7 +81,7 @@ export default function Scene({ setBg }) {
           />
         </a.mesh>
         <Environment preset="warehouse" />
-        <ContactShadows
+        {/* <ContactShadows
           rotation={[Math.PI / 2, 0, 0]}
           position={[0, -1.6, 0]}
           opacity={0.6}
@@ -89,7 +89,7 @@ export default function Scene({ setBg }) {
           height={15}
           blur={2.5}
           far={1.6}
-        />
+        /> */}
       </Suspense>
     </>
   );
