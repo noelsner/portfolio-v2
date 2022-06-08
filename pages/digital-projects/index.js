@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
-import Navbar from "../components/Navbar";
-import MobileScreenshot from "../components/MobileScreenshot";
-import DesktopScreenshot from "../components/DesktopScreenshot";
+import Link from "next/link";
+import Navbar from "../../components/Navbar";
+import MobileScreenshot from "../../components/MobileScreenshot";
+import DesktopScreenshot from "../../components/DesktopScreenshot";
 
 const projects = {
   brewgood: {
@@ -44,7 +44,10 @@ const DigitalProjectOverview = ({ project, children }) => {
             </span>
           ))}
         </p>
-        <p className="text-xl">{project.description}</p>
+        <p className="text-xl mb-3">{project.description}</p>
+        <Link href={project.pageUrl}>
+          <a className="text-xl font-light uppercase hover:underline">Learn More</a>
+        </Link>
       </div>
       <div className="relative w-full h-full max-w-6xl mx-auto mt-8 mb-24">{children}</div>
     </div>
