@@ -15,15 +15,15 @@ export default function Brewgood() {
       <div className="min-h-screen pb-16 bg-repeat bg-topo">
         <Navbar showName={true} />
         <main>
-          <h1 className="mt-20 mb-8 text-center text-7xl">
+          <h1 className="mt-20 mb-4 md:mb-8 text-center text-4xl md:text-7xl">
             <Link href="https://brewgood.coffee/">brewgood.coffee</Link>
           </h1>
-          <p className="text-center text-xl font-light">
+          <p className="text-center text-lg md:text-xl font-light">
             Next.js <span className="mx-2">|</span> SCSS Modules
           </p>
 
-          <div className="flex flex-row max-w-6xl mx-auto items-center justify-between px-12 mt-40">
-            <div className="w-1/2">
+          <div className="flex flex-col md:flex-row max-w-6xl mx-auto items-center justify-between px-6 md:px-12 mt-40">
+            <div className="md:w-1/2 order-2 md:order-1 mt-16 md:mt-0">
               <div className="max-w-md">
                 <p className="italic mb-2">Objective</p>
                 <p className="font-bold text-4xl mb-4">
@@ -39,12 +39,12 @@ export default function Brewgood() {
             <MobileScreenshot
               imgUrl="/images/projects/brewgood-mobile-1.png"
               alt="brewgood home page screenshot"
-              className="w-1/2"
+              className="md:w-1/2 order-1 md:order-2"
             />
           </div>
 
-          <div className="flex flex-row max-w-6xl mx-auto items-center justify-between px-12 mt-40">
-            <div className="w-1/2 order-2">
+          <div className="flex flex-col md:flex-row max-w-6xl mx-auto items-center justify-between px-6 md:px-12 mt-40">
+            <div className="md:w-1/2 order-2 mt-16 md:mt-0">
               <div className="max-w-md">
                 <p className="italic mb-2">Objective</p>
                 <p className="font-bold text-4xl mb-4">
@@ -60,12 +60,12 @@ export default function Brewgood() {
             <MobileScreenshot
               imgUrl="/images/projects/brewgood-mobile-2.png"
               alt="brewgood home page screenshot"
-              className="w-1/2"
+              className="md:w-1/2 order-1"
             />
           </div>
 
-          <div className="flex flex-row max-w-6xl mx-auto items-center justify-between px-12 mt-40">
-            <div className="w-1/2">
+          <div className="flex flex-col md:flex-row max-w-6xl mx-auto items-center justify-between px-6 md:px-12 mt-40">
+            <div className="md:w-1/2 order-2 md:order-1 mt-16 md:mt-0">
               <div className="max-w-md">
                 <p className="italic mb-2">Objective</p>
                 <p className="font-bold text-4xl mb-4">
@@ -81,7 +81,7 @@ export default function Brewgood() {
             <MobileScreenshot
               imgUrl="/images/projects/brewgood-mobile-3.png"
               alt="brewgood home page screenshot"
-              className="w-1/2"
+              className="md:w-1/2 order-1 md:order-2"
             />
           </div>
         </main>
